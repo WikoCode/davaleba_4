@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:paddingBottom="50dp">
+
+    <ImageView
+        android:id="@+id/svgImageView"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="255dp"
+        android:src="@drawable/square"
+        app:layout_constraintBottom_toTopOf="@+id/tvHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:text="Hello!"
+        android:textColor="@color/white"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvIntroduce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svgImageView" />
+
+    <TextView
+        android:id="@+id/tvIntroduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="396dp"
+        android:layout_weight="1"
+        android:text="lets introduce"
+        android:textColor="@color/blue_gray"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/darkblue_gray"
+        android:ems="15"
+        android:hint="Your full name"
+        android:inputType="text"
+        android:textColorHint="@color/Blueer_gray"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/svgYellowBr"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntroduce" />
+
+    <ImageView
+        android:id="@+id/svgYellowBr"
+        android:alpha="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="313dp"
+        android:src="@drawable/yellow_br"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntroduce" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/human"
+        app:layout_constraintBottom_toBottomOf="@+id/svgYellowBr"
+        app:layout_constraintEnd_toEndOf="@+id/svgYellowBr"
+        app:layout_constraintStart_toStartOf="@+id/svgYellowBr"
+        app:layout_constraintTop_toTopOf="@+id/svgYellowBr"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="@color/darkblue_gray"
+
+        android:ems="15"
+        android:hint="Username"
+        android:textColorHint="@color/Blueer_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/svgYellowBr2" />
+
+    <ImageView
+        android:id="@+id/svgYellowBr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="209dp"
+        android:alpha="0.8"
+        android:src="@drawable/yellow_br"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svgYellowBr"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/human"
+        app:layout_constraintBottom_toBottomOf="@+id/svgYellowBr2"
+        app:layout_constraintEnd_toEndOf="@+id/svgYellowBr2"
+        app:layout_constraintStart_toStartOf="@+id/svgYellowBr2"
+        app:layout_constraintTop_toTopOf="@+id/svgYellowBr2" />
+
+
+    <ImageButton
+        android:id="@+id/svgImageView4"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="96dp"
+        android:alpha="0.3"
+        android:background="@drawable/square"
+        android:src="@drawable/square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svgYellowBr2"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textColor="#3DD497"
+        android:textSize="24sp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/svgImageView4"
+        app:layout_constraintEnd_toEndOf="@+id/svgImageView4"
+        app:layout_constraintStart_toStartOf="@+id/svgImageView4"
+        app:layout_constraintTop_toTopOf="@+id/svgImageView4" />
+
+    <ImageButton
+        android:id="@+id/svgImageView5"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="97dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/svgImageView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/svgImageView5"
+        app:layout_constraintEnd_toEndOf="@+id/svgImageView5"
+        app:layout_constraintStart_toStartOf="@+id/svgImageView5"
+        app:layout_constraintTop_toTopOf="@+id/svgImageView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="→"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/svgImageView5"
+        app:layout_constraintEnd_toEndOf="@+id/svgImageView5"
+        app:layout_constraintStart_toStartOf="@+id/svgImageView5"
+        app:layout_constraintTop_toTopOf="@+id/svgImageView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
